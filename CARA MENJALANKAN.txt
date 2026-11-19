@@ -1,0 +1,19 @@
+CARA MENJALANKAN
+cd starter/backend
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+cd starter/web
+pip install streamlit
+streamlit run app.py
+
+cd starter/mobile
+flutter pub get
+flutter run
+# API_BASE_URL default: http://10.0.2.2:8000 (Android Emulator → host)
+
+cd starter/backend
+pytest tests/ -v
+
+cd starter/backend
+locust -f load_test/locustfile.py --host=http://127.0.0.1:8000
