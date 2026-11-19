@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SentiKampus Course Package v2
 
 Paket ini adalah **guided project** untuk mata kuliah Kecerdasan Buatan. Mahasiswa tidak hanya menjalankan aplikasi jadi dan juga tidak diwajibkan membangun seluruh stack dari nol pada pertemuan pertama. Mereka menerima scaffold, lalu melengkapi komponen sesuai urutan RPS.
@@ -69,3 +70,16 @@ Flutter Android digunakan pada fase multi-platform. Lihat `reference/mobile/READ
 ## Batas penggunaan
 
 Dataset dan model bersifat demonstratif. Jangan gunakan sistem ini untuk menilai mahasiswa/dosen, keputusan administratif, atau pemrosesan data pribadi. Gunakan input anonim.
+=======
+# Starter Flutter Android — P12
+
+Folder ini baru digunakan saat ekstensi multi-platform.
+
+```cmd
+flutter create --project-name sentikampus_mobile_starter --platforms=android .
+flutter pub get
+flutter run -d emulator-5554 --dart-define=API_BASE_URL=http://10.0.2.2:8000
+```
+
+Tugas mahasiswa: membuat request ke `/api/v1/predict`, parsing response, menampilkan label/confidence/probabilitas, dan menangani error jaringan.
+>>>>>>> 4ad8c09f8fcddc2b8f6633921ddef2f1ca8abdcc
