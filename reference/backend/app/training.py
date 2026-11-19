@@ -3,7 +3,8 @@
 import csv
 import json
 import pickle
-from datetime import datetime, timezone`r`n`r`nUTC = timezone.utc
+from datetime import datetime, timezone
+UTC = timezone.utc
 from pathlib import Path
 from typing import Any
 
